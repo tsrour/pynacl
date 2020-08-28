@@ -86,6 +86,7 @@ def which(name, flags=os.X_OK):  # Taken from twisted
 
 
 def use_system():
+    return True
     install_type = os.environ.get("SODIUM_INSTALL")
 
     if install_type == "system":
